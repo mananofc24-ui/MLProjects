@@ -1,0 +1,4 @@
+numpy
+pandas
+seaborn
+-e . #trigger setup.py file to build to packages
