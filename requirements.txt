@@ -1,4 +1,9 @@
 numpy
 pandas
 seaborn
+matplotlib
+scikit-learn
+catboost
+xgboost
+dill
 -e . #trigger setup.py file to build to packages
