@@ -17,4 +17,19 @@ COPY . .
 EXPOSE 5000 
 
 #The entry point
-CMD ["python" , "app.py"]
+CMD ["streamlit" , "run" , "streamlit_app.py" , "--server.port=5000" , "--server.address=0.0.0.0"]
+
+#To pull docker image from dockerhub
+'''
+docker pull man2406/student-performance-app 
+'''
+
+#To run the container
+'''
+docker run -p 5000:5000 man2406/student-performance-app
+'''
+
+#Test in browser
+'''
+http://localhost:5000 
+'''
